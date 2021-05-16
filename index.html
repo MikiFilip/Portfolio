@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title></title>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="stylesheet" href="js/onepagescroll.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <style type="text/css">
+            .white * {
+                color: white !important;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand"><img id="logo" class="logo-nav" src="img/FM-logo.png" /></a>
+            <button class="navbar-toggler collapsed btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav white mx-auto right">
+                    <li class="nav-item">
+                        <a id="home" class="nav-link active">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="about" class="nav-link">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="work" class="nav-link">
+                            WORK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact" class="nav-link">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pages" id="pages">
+            <section id="1"></section>
+            <section id="2">
+                <div class="box">
+                    <div class="box-content">
+                        <img id="click-me" src="img/nekro2.jpg" onclick="about('show')">
+                        <div class="number">01</div>
+                    </div>
+                    <div class="text">
+                        <h1>
+                            ABOUT ME
+                        </h1>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-show">
+                        <img src="img/nekro2.jpg">
+                        <button id="click-me" type="button" class="btn-close" onclick="about('close')"></button>
+                    </div>
+                </div>            
+            </section>
+            <section id="3">
+                <div class="box">
+                    <div class="box-content">
+                        <img id="click-me" src="img/nekro3.jpg">
+                        <div class="number">02</div>
+                    </div>
+                    <div class="text">
+                        <h1>
+                            WORK
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <section id="4">
+                <div class="box">
+                    <div class="box-content">
+                        <img id="click-me" src="img/nekro4.jpg">
+                        <div class="number">03</div>
+                    </div>
+                    <div class="text">
+                        <h1>
+                            CONTACT
+                        </h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="js/onepagescroll.js"></script>
+        <script type="text/javascript">
+            onepagescroll("div.pages");
+        </script>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>

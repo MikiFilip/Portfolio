@@ -1,0 +1,124 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ops-container {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;    
+}
+
+.ops-page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center top; */
+}
+
+ .ops-navigation {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 20px;
+    top: 50%;
+    z-index: 2;
+    list-style: none;
+    float: right;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.ops-navigation li {
+    text-align: center;
+    padding: 4px 0;
+    margin: 15px 0;
+}
+
+.ops-navigation a {
+    display: block;
+    width: 40px;
+    height: 4px;
+}
+
+.ops-navigation a:before {
+    display: block;
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background: white;
+    border-radius: 3px;
+}
+
+.ops-navigation a.active {
+    width: 4px;
+    height: 4px;
+}
+.ops-navigation a.active:before {
+    border-radius: 3px;
+    width: 60px;
+    height: 4px;
+    border: 1px solid white;
+    background: white;
+    left: -20px;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .ops-navigation {
+        bottom: 0;
+        top: unset;
+        left: 50%;
+        right: unset;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, -20px);
+        float: unset;
+    }
+
+	.ops-navigation li {
+		display: inline-block;
+	    text-align: center;
+/* 	    padding: 0 8px;
+ */	    margin: 0 2vw;
+	}
+
+	.ops-navigation a {
+	    display: block;
+        width: .7vw;
+        height: 3vh;
+	}
+
+	.ops-navigation a:before {
+	    content: " ";
+	    width: .8vw;
+	    height: 3vh;
+	    background: white;
+	    border-radius: 3px;
+	}
+
+	.ops-navigation a.active {
+		display: inline-block;
+	    border-radius: 3px;
+        width: .8vw;
+        height: 6vh;
+	    border: 1px solid white;
+	    background: white;
+	    bottom: 4px;
+	    position: relative;
+	}
+	.ops-navigation a.active:before {
+		display: none;
+	}
+}
+
+.hideSideNav{
+    display: none;
+}

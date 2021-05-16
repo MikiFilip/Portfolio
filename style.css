@@ -1,0 +1,22 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+section{
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+section:nth-child(1){background: linear-gradient(#696969,#4f4f4f);}
+section:nth-child(2){background: linear-gradient(#4f4f4f,#3b3b3b);}
+section:nth-child(3){background: linear-gradient(#3b3b3b,#2b2b2b);}
+section:nth-child(4){background: linear-gradient(#2b2b2b,#1c1c1c);}
+section:nth-child(5){background: linear-gradient(#1c1c1c,#000000);}
+
